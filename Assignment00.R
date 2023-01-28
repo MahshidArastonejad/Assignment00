@@ -11,7 +11,7 @@ ggplot(mtcars, aes(mpg)) +
 #put lables on the plot 
 ggplot(mtcars,aes(x = mpg, y = hp))+
   
-  geom_point(color = "purple", size = 4.5, shape = 1)+ theme_classic()+
+  geom_point(aes(color = factor(cyl)), size = 4.5, shape = 1)+ theme_classic()+
   labs(title = "Scatterplot - MPG Vs HP",
        subtitle = "Scatterplot showing Negative Correlation",
        x = "Miles Per Gallon",
