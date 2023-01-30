@@ -18,6 +18,6 @@ ggplot(mtcars,aes(x = hp , y = wt))+geom_point(aes(color=factor(cyl), shape = fa
        x = "Horsepower",
        y = "Weight",
        caption = "Source: MTCARS Dataset")
-#plot
+
 
 
