@@ -9,11 +9,11 @@ ggplot(mtcars, aes(mpg)) +
   ggtitle('Distribution of Cars by Mileage')
 #creat scatterplot
 #put lables on the plot 
-
-ggplot(mtcars,aes(x = mpg, y = hp))+geom_point(aes(color=factor(cyl), shape = factor(cyl),size = factor(cyl)))+ theme_classic()+ 
-  labs(title = "Scatterplot - MPG Vs HP",
-       subtitle = "Scatterplot showing Negative Correlation",
-       x = "Miles Per Gallon",
-       y = "Horsepower",
+#add caption
+#add Theme
+ggplot(mtcars,aes(x = hp , y = wt))+geom_point(aes(color=factor(cyl), shape = factor(cyl),size = factor(cyl)))+ theme_classic()+ 
+  labs(title = "Scatterplot - Weight Vs HP",
+       x = "Horsepower",
+       y = "Weight"
        caption = "Source: MTCARS Dataset")
 
