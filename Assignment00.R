@@ -12,9 +12,12 @@ ggplot(mtcars, aes(mpg)) +
 #add caption
 #add Theme
 #Scatterplot
+
 ggplot(mtcars,aes(x = hp , y = wt))+geom_point(aes(color=factor(cyl), shape = factor(cyl),size = factor(cyl)))+ theme_classic()+ 
   labs(title = "Scatterplot - Weight Vs HP",
        x = "Horsepower",
        y = "Weight",
        caption = "Source: MTCARS Dataset")
+#plot
+
 
